@@ -15,7 +15,32 @@ public class Player : MonoBehaviour
     private void Update()
     {
         Movement();
+        GroundCheck();
         Jump();
+    }
+    public LayerMask walkableMask;
+    public float regularSpeed = 7.7f;
+    public float fastSpeed = 11.1f;
+    public float slowSpeed = 4.9f;
+    public float airSpeed = 1.22f;
+    void GroundCheck()
+    {
+        RaycastHit hit;
+        Physics.SphereCast(transform.position, 0.501f, Vector3.down, out hit,  1 - 0.501f + 0.2f, walkableMask);
+        if (hit.collider == null)
+        {
+            speed = airSpeed;
+            return;
+        }
+        switch(hit.collider.tag)
+        {
+            case "Fast":
+                speed = fastSpeed; break;
+            case "Slow":
+                speed = slowSpeed; break;
+            default:
+                speed = regularSpeed; break;
+        }
     }
 
     bool grounded;
@@ -24,16 +49,18 @@ public class Player : MonoBehaviour
     {
 
         var col = controller.Move(Vector3.up * velocity_y * Time.deltaTime);
-        grounded = (col & CollisionFlags.Below) != 0;
+        grounded = (col & CollisionFlags.Below) != 0 && velocity_y < 0;
         bool jumpInput = Input.GetButton("Jump");
 
-        if(jumpInput && grounded)
+        if(grounded)
         {
-            velocity_y = 7;
+            if (jumpInput)
+                velocity_y = 7;
+            else
+                velocity_y = 0;
         }
 
         velocity_y += Physics.gravity.y * Time.deltaTime;
-
     }
     void Movement()
     {
