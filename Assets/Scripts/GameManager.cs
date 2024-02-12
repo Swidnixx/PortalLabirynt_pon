@@ -74,4 +74,17 @@ public class GameManager : MonoBehaviour
                 break;
         }
     }
+    public void AddTime(int time)
+    {
+        this.time += time;
+        if(this.time <= 0)
+        {
+            this.time = 1;
+        }
+    }
+    public void FreezeTime(int time)
+    {
+        CancelInvoke(nameof(Stopper));
+        InvokeRepeating(nameof(Stopper), time, 1);
+    }
 }
