@@ -273,7 +273,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 2100000, guid: 2c73fedb6cb39f14b8d338645a5a326e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -982,7 +982,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 2100000, guid: 2c73fedb6cb39f14b8d338645a5a326e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1330,11 +1330,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3367610514a0e1e4d93b0c3419be1380, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  otherPortal: {fileID: 0}
-  material: {fileID: 0}
-  myCamera: {fileID: 1966316240}
-  renderSurface: {fileID: 31341138}
-  portalCollider: {fileID: 972926618}
+  otherPortal: {fileID: 1518430427}
+  renderSurface: {fileID: 31341139}
 --- !u!4 &1226238410
 Transform:
   m_ObjectHideFlags: 0
@@ -1704,11 +1701,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3367610514a0e1e4d93b0c3419be1380, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  otherPortal: {fileID: 0}
-  material: {fileID: 0}
-  myCamera: {fileID: 1360795218}
-  renderSurface: {fileID: 810647347}
-  portalCollider: {fileID: 1754696484}
+  otherPortal: {fileID: 1226238409}
+  renderSurface: {fileID: 810647348}
 --- !u!4 &1518430428
 Transform:
   m_ObjectHideFlags: 0
