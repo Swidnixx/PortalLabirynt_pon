@@ -1012,6 +1012,17 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 810647346}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &841380584 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2523362318877328503, guid: d1fbf6c07de18b34fa21df692806d060, type: 3}
+  m_PrefabInstance: {fileID: 2523362318644704927}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f595eaf390e714149af91ae5d82d90d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -2720,6 +2731,63 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60aaa97b9e008034f9e6fb621d2ded6e, type: 3}
+--- !u!1001 &2523362318644704927
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2523362318877328504, guid: d1fbf6c07de18b34fa21df692806d060, type: 3}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 2523362318877328504, guid: d1fbf6c07de18b34fa21df692806d060, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2523362318877328504, guid: d1fbf6c07de18b34fa21df692806d060, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2523362318877328504, guid: d1fbf6c07de18b34fa21df692806d060, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2523362318877328504, guid: d1fbf6c07de18b34fa21df692806d060, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2523362318877328504, guid: d1fbf6c07de18b34fa21df692806d060, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2523362318877328504, guid: d1fbf6c07de18b34fa21df692806d060, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2523362318877328504, guid: d1fbf6c07de18b34fa21df692806d060, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2523362318877328504, guid: d1fbf6c07de18b34fa21df692806d060, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2523362318877328504, guid: d1fbf6c07de18b34fa21df692806d060, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2523362318877328504, guid: d1fbf6c07de18b34fa21df692806d060, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2523362318877328505, guid: d1fbf6c07de18b34fa21df692806d060, type: 3}
+      propertyPath: m_Name
+      value: DoorMechanim
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d1fbf6c07de18b34fa21df692806d060, type: 3}
 --- !u!1001 &5073743835218349947
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2838,3 +2906,64 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ddd903eedb825fd48864bf10bad633d5, type: 3}
+--- !u!1001 &7289413099644936212
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7289413099446814981, guid: 7100a7649aa4b154d8d695c4bd1345fc, type: 3}
+      propertyPath: m_RootOrder
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 7289413099446814981, guid: 7100a7649aa4b154d8d695c4bd1345fc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7289413099446814981, guid: 7100a7649aa4b154d8d695c4bd1345fc, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7289413099446814981, guid: 7100a7649aa4b154d8d695c4bd1345fc, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7289413099446814981, guid: 7100a7649aa4b154d8d695c4bd1345fc, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7289413099446814981, guid: 7100a7649aa4b154d8d695c4bd1345fc, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7289413099446814981, guid: 7100a7649aa4b154d8d695c4bd1345fc, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7289413099446814981, guid: 7100a7649aa4b154d8d695c4bd1345fc, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7289413099446814981, guid: 7100a7649aa4b154d8d695c4bd1345fc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7289413099446814981, guid: 7100a7649aa4b154d8d695c4bd1345fc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7289413099446814981, guid: 7100a7649aa4b154d8d695c4bd1345fc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7289413099446814982, guid: 7100a7649aa4b154d8d695c4bd1345fc, type: 3}
+      propertyPath: doorToOpen.Array.data[0]
+      value: 
+      objectReference: {fileID: 841380584}
+    - target: {fileID: 7289413099446815003, guid: 7100a7649aa4b154d8d695c4bd1345fc, type: 3}
+      propertyPath: m_Name
+      value: LockMechanim
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7100a7649aa4b154d8d695c4bd1345fc, type: 3}
