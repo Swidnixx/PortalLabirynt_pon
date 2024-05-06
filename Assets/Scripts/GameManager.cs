@@ -1,6 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -11,8 +11,14 @@ public class GameManager : MonoBehaviour
         Instance = this;
     }
 
+    public int Diamonds => diamonds;
+    public int RedKeys => keys_red;
+    public int GoldKeys => keys_gold;
+    public int GreenKeys => keys_green;
+
     public int time = 60;
     bool paused;
+    bool over;
 
     int diamonds;
     int keys_red, keys_green, keys_gold;
@@ -23,6 +29,20 @@ public class GameManager : MonoBehaviour
     }
     private void Update()
     {
+        if(over)
+        {
+            if(Input.GetKeyDown(KeyCode.F))
+            {
+                Time.timeScale = 1;
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            }
+            if (Input.GetKeyDown(KeyCode.Q))
+            {
+                Application.Quit();
+            }
+            return;
+        }
+
         //Input.GetKeyDown(KeyCode.Escape)
         if(Input.GetButtonDown("Cancel"))
         {
@@ -46,12 +66,23 @@ public class GameManager : MonoBehaviour
     }
     void Stopper()
     {
+        DisplayUI.Instance.DisplayFreeze(false);
         time--;
         if (time <= 0)
         {
-            CancelInvoke(nameof(Stopper));
             // Game over
+            CancelInvoke(nameof(Stopper));
+            Time.timeScale = 0;
+            DisplayUI.Instance.DisplayGameOver();
+            over = true;
         }
+    }
+    public void Win()
+    {
+        over = true;
+        Time.timeScale = 0;
+        CancelInvoke(nameof(Stopper));
+        DisplayUI.Instance.DisplayWin();
     }
 
     // Pickups
@@ -86,6 +117,7 @@ public class GameManager : MonoBehaviour
     {
         CancelInvoke(nameof(Stopper));
         InvokeRepeating(nameof(Stopper), time, 1);
+        DisplayUI.Instance.DisplayFreeze(true);
     }
 
     public bool HasKey(KeyColor keyColor)
@@ -100,5 +132,20 @@ public class GameManager : MonoBehaviour
                 return keys_gold > 0;
         }
         return false;
+    }
+    public void UseKey(KeyColor keyColor)
+    {
+        switch (keyColor)
+        {
+            case KeyColor.Red:
+                keys_red--;
+                break;
+            case KeyColor.Green:
+                keys_green--;
+                break;
+            case KeyColor.Gold:
+                keys_gold--;
+                break;
+        }
     }
 }

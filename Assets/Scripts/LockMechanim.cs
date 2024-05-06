@@ -18,7 +18,8 @@ public class LockMechanim : MonoBehaviour
             {
                 if ( GameManager.Instance.HasKey(keyColor) )
                 {
-                    animator.SetTrigger("open"); 
+                    animator.SetTrigger("open");
+                    GameManager.Instance.UseKey(keyColor);
                 }
             } 
         }
